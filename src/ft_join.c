@@ -1,5 +1,4 @@
 #include "ft_str.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 char *ft_join(list_t **list, char *join_str)
