@@ -33,5 +33,3 @@ SRC_FILES = src/ft_binary.c \
 
 all:
 	$(CC) -c -I $(INCLUDES) $(SRC_FILES)
-	ar -rcs libft_str.a *.o
-	rm *.o
