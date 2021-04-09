@@ -1,5 +1,6 @@
 #include "ft_str.h"
 #include <stdlib.h>
+#include <stddef.h>
 
 list_t *new_list(void)
 {
@@ -23,7 +24,7 @@ void push_list(list_t **list, list_t *new)
 void pop_list(list_t **list)
 {
     list_t *next = (*list)->next;
-    next->prev = (*list)->prev;
+    next->prev = NULL;
     next->index = (*list)->index - 1;
     free(*list);
     *list = next;
