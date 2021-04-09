@@ -18,6 +18,7 @@ void push_list(list_t **list, list_t *new)
     (*list)->prev = new;
     new->index = (*list)->index + 1;
     new->next = *list;
+    new->prev = NULL;
     *list = new;
 }
 
